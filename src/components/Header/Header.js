@@ -7,7 +7,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { TiShoppingCart } from "react-icons/ti";
 function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
@@ -37,7 +37,7 @@ function CollapsibleExample() {
               />
               <Button variant="outline-success">Search</Button>
             </Form>
-            <Nav.Link as={Link} to="/cart">Cart</Nav.Link>
+            <Nav.Link as={Link} to="/cart"><TiShoppingCart /></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

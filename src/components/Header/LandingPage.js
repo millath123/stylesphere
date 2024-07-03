@@ -1,51 +1,36 @@
 import React from "react";
 import styled from "styled-components";
+import backgroundImage from '../../assets/images/backgroud_img1 (1).png';
 
 const BannerContainer = styled.div`
-.background-image-container {
-	background: url(../assets/ba)center no-repeat;
-	background-size: 1150px 555px;
-	height: 100vh;
-	background-attachment: fixed;
-	background-color: white;
+  background: url(${backgroundImage}) center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backgroundcenter no-repeat;
+  background-size: cover;
+  color: white !important;
+  padding-top: 80px;
+  padding-bottom: 80px;
+`;
+
+const BannerRow = styled.div`
+  img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    padding-left: 30px;
   }
-  
-  .product-list {
-	padding: 20px;
+  h3, p {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
   }
-  
-  .product-card {
-	border: 1px solid #ccc;
-	border-radius: 10px;
-	text-align: center;
-  }
-  
-  .product-card img {
-	max-width: 100%;
-	height: auto;
-  }
-  
-  .product-card h5 {
-	font-size: 18px;
-	margin: 10px 0;
-  }
-  
-  .product-card p {
-	font-size: 14px;
-	margin: 5px 0;
-  }
-  
-  .product-card button {
-	background-color: #007bff;
-	color: white;
-	border: none;
-	padding: 10px;
-	border-radius: 5px;
-	cursor: pointer;
-  }
-  
-  .product-card button:hover {
-	background-color: #0056b3;
+  a {
+    background-color: white !important;
+    color: black !important;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 `;
 
@@ -55,12 +40,32 @@ const BannerCol = styled.div`
 
 const LandingPage = () => {
   return (
-    <div className="container">
-      <div className="row mb-4">
-        <div className="col-12">
-          
-        </div>
-      </div></div>
+    <div>
+      <section id="banner">
+        <BannerContainer className="container-fluid" id="banner-container">
+          <BannerRow className="row" id="banner-row">
+            <BannerCol className="col-md-6" id="banner-col">
+              <h3>
+               
+              </h3>
+              <p>
+                
+              </p>
+              <div className="d-grid gap-2 d-md-flex justify-content-center">
+                
+              </div>
+            </BannerCol>
+            <div className="col-md-6" id="banner-col2">
+              <img
+                className="img-responsive rounded mx-auto d-block"
+                src="images/gfg.png"
+                alt=""
+              />
+            </div>
+          </BannerRow>
+        </BannerContainer>
+      </section>
+    </div>
   );
 }
 
