@@ -1,21 +1,22 @@
-import './App.css';
-import Header from '../src/components/Header/Header'
-import ProductList from '../src/components/Product/ProductList';
-import Cart from '../src/components/Cart/Cart';
-import { CartProvider } from '../src/context/CartContext';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from '../src/pages/Home';
+import Cart from '../src/pages/Cart';
+import {CartProvider} from '../src/context/CartContext'
 
 
-function App() {
+export default function App() {
   return (
-    <>
-    <CartProvider>
-    <Header/>
-    <ProductList/>
-    <Cart/>
-    </CartProvider>
-    </>
-   
+    <BrowserRouter>
+     <CartProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      </CartProvider> 
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
