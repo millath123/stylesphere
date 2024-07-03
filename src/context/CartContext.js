@@ -1,4 +1,8 @@
 import React, { createContext, useReducer, useContext } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const CartContext = createContext();
 
@@ -39,6 +43,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = product => {
     dispatch({ type: 'ADD_TO_CART', payload: product });
+    toast.success(`${product.title} added to cart!`);
   };
 
   const removeFromCart = id => {
@@ -62,6 +67,7 @@ export const CartProvider = ({ children }) => {
       value={{ cart, addToCart, removeFromCart, incrementQuantity, decrementQuantity, getCartTotal }}
     >
       {children}
+      <ToastContainer />
     </CartContext.Provider>
   );
 };

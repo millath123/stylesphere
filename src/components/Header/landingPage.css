@@ -1,0 +1,38 @@
+  
+#banner-container{ 
+    background-color: #0a193d; 
+    color: white !important; 
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+      
+} 
+  
+#banner-row img{ 
+    max-width: 70%; 
+    height: auto; 
+    display: block; 
+    padding-left: 30px; 
+} 
+  
+#banner-row h3, p{ 
+    padding-left: 20px; 
+    padding-top: 20px; 
+    text-align: center; 
+} 
+  
+#banner-row a{ 
+    background-color: white !important; 
+    color: black !important; 
+    border: none; 
+    margin-left: 20px; 
+    margin-top: 20px; 
+      
+} 
+#banner-col{ 
+    padding-left: 20px; 
+} 
+/* service */
+#service{ 
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+} 
