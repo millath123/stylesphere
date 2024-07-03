@@ -5,7 +5,6 @@ const LndingPage = () => {
 
     return (
         <div>
-            
         </div>
     );
 

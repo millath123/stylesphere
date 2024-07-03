@@ -4,10 +4,8 @@ import { useCart } from '../../context/CartContext';
 import '../../components/Product/Product.css';
 
 const ProductList = () => {
-  const { data: products, loading, error } = useFetchProducts('https://fakestoreapi.com/products');
+  const { data: products } = useFetchProducts('https://fakestoreapi.com/products');
   const { addToCart } = useCart();
-
-
   return (
      
     <div className="product-list">
@@ -23,5 +21,4 @@ const ProductList = () => {
     </div>
   );
 };
-
 export default ProductList;
