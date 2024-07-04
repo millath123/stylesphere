@@ -1,43 +1,44 @@
 import React from "react";
 import styled from "styled-components";
-import backgroundImage from '../../assets/images/backgroud_img1 (1).png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BannerContainer = styled.div`
   background: url('https://i.imgur.com/rnTJ5Jy.png') center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  backgroundcenter no-repeat;
-  background-size: cover;
   color: white !important;
   padding-top: 80px;
   padding-bottom: 80px;
-  height:500px;
-  width:1300px;
+  height: 500px;
+  width: 100%; /* Make width 100% to be responsive */
 `;
 
 const BannerRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   img {
-    max-width: 70%;
-    height:80%;
+    max-width: 100%;
+    height: auto;
     display: block;
-    padding-left: 30px;
+    margin: 0 auto;
   }
   h3, p {
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 0 20px;
     text-align: center;
   }
   a {
     background-color: white !important;
     color: black !important;
     border: none;
-    margin-left: 20px;
     margin-top: 20px;
   }
 `;
 
 const BannerCol = styled.div`
-  padding-left: 20px;
+  padding: 20px;
 `;
 
 const LandingPage = () => {
@@ -47,28 +48,24 @@ const LandingPage = () => {
         <BannerContainer className="container-fluid" id="banner-container">
           <BannerRow className="row" id="banner-row">
             <BannerCol className="col-md-6" id="banner-col">
-              <h3>
-               
-              </h3>
-              <p>
-                
-              </p>
-              <div className="d-grid gap-2 d-md-flex justify-content-center">
-                
-              </div>
+              {/* <h3>Welcome to Our Store</h3>
+              <p>Discover amazing products and deals just for you!</p> */}
+              {/* <div className="d-grid gap-2 d-md-flex justify-content-center">
+                <a href="#shop" className="btn btn-primary">Shop Now</a>
+              </div> */}
             </BannerCol>
             <div className="col-md-6" id="banner-col2">
-              <img
+              {/* <img
                 className="img-responsive rounded mx-auto d-block"
-                src="images/gfg.png"
-                alt=""
-              />
+                src="https://via.placeholder.com/300"
+                alt="Banner"
+              /> */}
             </div>
           </BannerRow>
         </BannerContainer>
       </section>
     </div>
   );
-}
+};
 
 export default LandingPage;
