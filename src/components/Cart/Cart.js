@@ -4,6 +4,7 @@ import '../../components/Cart/Cart.css';
 import Header from '../../components/Header/Header'
 import emptyCartAnimation from '../../assets/emptyCart.json';
 import Lottie from 'react-lottie-player';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, removeFromCart, incrementQuantity, decrementQuantity, getCartTotal } = useCart();
@@ -18,9 +19,7 @@ const Cart = () => {
         {cart.length === 0 ? (
         <div style={{ textAlign: 'center' }}>
           <p>Your cart is empty</p>
-          <Lottie
-            loop
-            animationData={emptyCartAnimation}
+          <Lottie loop  animationData={emptyCartAnimation}
             play
             style={{ width: 300, height: 300 }}
           />
@@ -46,8 +45,12 @@ const Cart = () => {
             </ul>
             <h3>Total Price: Rs.{getCartTotal().toFixed(2)}</h3>
           </>
-        )}
+        )}<div>
+        <Link to="/"><p>Back to home</p></Link>
+        </div>
+
       </div>
+      
     </div>
 
   );
