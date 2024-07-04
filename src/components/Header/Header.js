@@ -15,12 +15,12 @@ function CollapsibleExample() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-white">
       <Container>
-        <Navbar.Brand as={Link} to="/">STYLE SPHERE</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"className='logo'>STYLE SPHERE</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
+            {/* <Nav.Link as={Link} to="/"id='home'>Home</Nav.Link>
+            <Nav.Link as={Link} to="/shop"id='home'>Shop</Nav.Link> */}
           </Nav>
          
           <Nav className="ms-auto">
@@ -31,7 +31,7 @@ function CollapsibleExample() {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-dark">Search</Button>
             </Form>
             <Nav.Link as={Link} to="/cart"><TiShoppingCart className='cat-icon'/></Nav.Link>
           </Nav>

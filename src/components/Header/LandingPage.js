@@ -10,35 +10,29 @@ const BannerContainer = styled.div`
   padding-top: 80px;
   padding-bottom: 80px;
   height: 500px;
-  width: 100%; /* Make width 100% to be responsive */
+  width:88%;
 `;
 
 const BannerRow = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  height: 100%;
 
   img {
-    max-width: 100%;
+    max-width: 35%;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  h3, p {
-    padding: 0 20px;
-    text-align: center;
-  }
-  a {
-    background-color: white !important;
-    color: black !important;
-    border: none;
-    margin-top: 20px;
-  }
 `;
 
 const BannerCol = styled.div`
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: cursive;
 `;
 
 const LandingPage = () => {
@@ -48,19 +42,15 @@ const LandingPage = () => {
         <BannerContainer className="container-fluid" id="banner-container">
           <BannerRow className="row" id="banner-row">
             <BannerCol className="col-md-6" id="banner-col">
-              {/* <h3>Welcome to Our Store</h3>
-              <p>Discover amazing products and deals just for you!</p> */}
-              {/* <div className="d-grid gap-2 d-md-flex justify-content-center">
-                <a href="#shop" className="btn btn-primary">Shop Now</a>
-              </div> */}
+            <h2 className="text-center text-md-start text-dark " >Where Trends Are Born</h2>
             </BannerCol>
-            <div className="col-md-6" id="banner-col2">
-              {/* <img
+            <BannerCol className="col-md-6" id="banner-col2">
+            <img
                 className="img-responsive rounded mx-auto d-block"
-                src="https://via.placeholder.com/300"
+                src="https://i.imgur.com/KEI1Lj1.png"
                 alt="Banner"
-              /> */}
-            </div>
+              />
+            </BannerCol>
           </BannerRow>
         </BannerContainer>
       </section>

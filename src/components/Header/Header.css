@@ -1,4 +1,11 @@
 .cat-icon{
     width: 20px;
     height:auto;
+    font-weight: bold;
+}
+#home{
+    color: black;
+}
+.logo{
+ font-weight: bold;
 }
