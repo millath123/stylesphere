@@ -3,7 +3,7 @@ import styled from "styled-components";
 import backgroundImage from '../../assets/images/backgroud_img1 (1).png';
 
 const BannerContainer = styled.div`
-  background: url(${backgroundImage}) center center fixed;
+  background: url('https://i.imgur.com/rnTJ5Jy.png') center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   backgroundcenter no-repeat;
@@ -11,12 +11,14 @@ const BannerContainer = styled.div`
   color: white !important;
   padding-top: 80px;
   padding-bottom: 80px;
+  height:500px;
+  width:1300px;
 `;
 
 const BannerRow = styled.div`
   img {
     max-width: 70%;
-    height: auto;
+    height:80%;
     display: block;
     padding-left: 30px;
   }

@@ -13,7 +13,7 @@ import '../Header/Header.css';
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-white">
       <Container>
         <Navbar.Brand as={Link} to="/">STYLE SPHERE</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

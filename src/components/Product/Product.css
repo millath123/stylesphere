@@ -1,20 +1,14 @@
 .product-list-container {
-  padding: 0 20px; /* Add padding to both sides */
-}
-
-.product-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Always display four columns */
-  gap: 20px;
-  justify-content: center;
-  padding: 20px 0; /* Padding on top and bottom */
+  padding: 20px 20px; /* Add padding to all sides */
 }
 
 .product-card {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
+  margin-bottom: 20px;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .product-card img {
