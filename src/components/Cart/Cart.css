@@ -1,11 +1,16 @@
+
+
+
 .cart {
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(253, 244, 244);
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 1250px;
   margin: 20px auto;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: rgb(253, 244, 244);
+  font-family: cursive;
+  ;
 }
 
 .cart h2 {
@@ -49,18 +54,24 @@
 }
 
 .cart button {
-  background-color: #ff0000;
-  color: white;
+ 
+  color: #ff0000;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   margin-right: 10px;
   font-family: 'Poppins', 'Roboto', sans-serif;
+  border: none;
+  background-color: rgb(253, 244, 244);
+
 }
 
 .cart button:hover {
-  background-color: #cc0000;
+  color: #ff0000;
+  border: none;
+  background-color: rgb(253, 244, 244);
+
 }
 
 .quantity-actions {
