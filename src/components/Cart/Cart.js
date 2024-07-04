@@ -15,7 +15,7 @@ const Cart = () => {
       <Header />
       <div className='cart-container'>
         <div className="cart">
-          
+          <h1>YOUR CART</h1>
           {cart.length === 0 ? (
             <div style={{ textAlign: 'center' }}>
              
